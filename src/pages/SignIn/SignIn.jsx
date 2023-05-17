@@ -38,7 +38,7 @@ const SignIn = () => {
 
     if (response == true){
       dispatch('user/login', usuario)
-      navigate('/')
+      navigate('/login')
     }
   }
 

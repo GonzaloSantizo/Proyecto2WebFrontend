@@ -41,7 +41,7 @@ const LogIn = () => {
     const response = await respond()
     if (response == true){
       dispatch('user/login', usuario)
-      navigate('/')
+      navigate('/paginaInfo')
     }
   }
 

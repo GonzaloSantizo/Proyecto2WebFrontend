@@ -9,4 +9,11 @@
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  color: black;
+
+}
+
+h3{
+  font-size: 2em;
+  color: black;
 }

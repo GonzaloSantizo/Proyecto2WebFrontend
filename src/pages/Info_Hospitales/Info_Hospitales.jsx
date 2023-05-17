@@ -11,6 +11,7 @@ const Info_Hospitales = () => {
 
   return (
     <div className={styles}>
+      <h4> <a href='../'> Home</a></h4>
       <div className={info_section}>
         <h1>{hospital.nombre}</h1>
         <div className={informacion}>
@@ -28,14 +29,15 @@ const Info_Hospitales = () => {
           <h1>Reseñas</h1>
           <h2>Puntuación Media: 9.5/10</h2>
           <div className='seccionReviews'>
-            <Review nombre={"Esteban"} comentario={"fkjlajfkdsñlajfdklsñajfkdlsñajfkdlsñajfkdlsñajfkdlsñajfkldsñajfklañdjfkñsdjkdsñajfkdsñajfkdlñsajfkldñajfkdsjfklñdsjfklñsdjkñf"} />
+            <Review nombre={"Jose"} comentario={"Buen servicio"} />
           </div>
         </div>
         <Divider />
         <div className={servicios}>
           <h1>Servicio</h1>
           <div className='seccionServicios'>
-            <Servicio examen={"Endoscopía"} precio={"Q.100.00"}/>
+            <Servicio examen={"Endoscopía"} precio={"Q.100.00"} 
+            />
           </div>
         </div>
       </div>

@@ -6,6 +6,10 @@ import { useStoreon } from 'storeon/react'
 import { Notification } from '@components'
 import { useApi } from '@hooks'
 import { styles } from './LogIn.module.css'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Spinner from 'react-bootstrap/Spinner';
+
 
 const LogIn = () => {
   const { loading, data, handleRequest } = useApi()
@@ -16,6 +20,8 @@ const LogIn = () => {
       password: ''
     }
   )
+  const [showButton, setShowButton] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(false)
 
   const respond = async() => {
     const response = await handleRequest('GET', `/users/validateUser/${values.email}&${values.password}`)
@@ -39,9 +45,17 @@ const LogIn = () => {
   const handleClick = async() => {
     const usuario = {email: values.email, contra: values.password}
     const response = await respond()
+    
     if (response == true){
+      setShowButton(!showButton);
+      setShowAnimation(!showAnimation)
+   
+    setTimeout(() => {
       dispatch('user/login', usuario)
       navigate('/paginaInfo')
+    }, 2000);
+     
+      
     }
   }
 
@@ -49,9 +63,18 @@ const LogIn = () => {
     <div className={styles}>
       <h1>Log In</h1>
       <h2>Correo</h2>
-      <input type="text" placeholder="Escriba su correo" value={values.email} onChange={handleChangeCorreo} />
-      <h2>Contraseña</h2>
-      <input type="text" placeholder="Escriba su contraseña" value={values.password} onChange={handleChangeContraseña}/>
+      
+      <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        
+        <Form.Control type="email" placeholder="Ingresar Correo" value={values.email} onChange={handleChangeCorreo} />
+      </Form.Group>
+<h2>Contraseña</h2>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Control type="password" placeholder="Ingresar contraseña" value={values.password} onChange={handleChangeContraseña} />
+      </Form.Group>
+      </Form>
+   
       <br />
       {
         data == true || data == null ?
@@ -61,8 +84,28 @@ const LogIn = () => {
           </Notification>
       }
       <br />
-      <button onClick={handleClick}>Ingresar</button>
+      { showAnimation
+     &&     <Button variant="dark" disabled>
+     <Spinner
+       as="span"
+       animation="border"
+       size="sm"
+       role="status"
+       aria-hidden="true"
+     >
+     <span className="visually-hidden">Loading...</span>
+     </Spinner>
+   </Button>
+     }
+      {showButton && <button onClick={handleClick}>Ingresar
+  
+      </button>}
+
+     
     </div>
+
+    
+    
   )
 }
 

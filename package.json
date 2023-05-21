@@ -12,26 +12,36 @@
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.6",
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.18",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.2",
     "@storeon/localstorage": "^1.5.0",
     "@storeon/router": "^2.0.1",
+    "bootstrap": "^5.2.3",
     "joi": "^17.9.2",
     "jquery": "^3.6.4",
+    "mdb-react-ui-kit": "^6.0.0",
     "pure-react-carousel": "^1.30.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-slick": "^0.29.0",
-    "sass": "^1.62.1",
     "slick-carousel": "^1.8.1",
-    "storeon": "^3.1.5"
+    "storeon": "^3.1.5",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.4",
+    "postcss-loader": "^7.3.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.3",
     "vite": "^4.2.0"
   }
 }

@@ -1,9 +1,9 @@
-import React from 'react'
-import { StoreContext } from 'storeon/react'
-import store from '@store'
-import './App.css'
+import React from "react";
+import { StoreContext } from "storeon/react";
+import store from "@store";
+import "./App.css";
 
-import Page from '@pages'
+import Page from "@pages";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Page />
       </div>
     </StoreContext.Provider>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -2,4 +2,6 @@
   width: 5px;
   height: auto;
   background-color: black;
+  display: flex;
+  overflow-x: hidden;
 }

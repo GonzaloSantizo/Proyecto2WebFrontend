@@ -1,0 +1,15 @@
+.Imagen-Footer{
+    width: 200px;
+    height: 200px;
+}
+
+button{
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
+.form{
+    display: inline-flex;
+    flex-direction: column;
+}

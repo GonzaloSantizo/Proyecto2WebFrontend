@@ -1,3 +1,30 @@
+
+/* Common styles */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    /* Adjust the styles for smaller screens */
+    justify-content: flex-start;
+  }
+}
+
+/* Responsive styles for screens larger than 1200px */
+@media (min-width: 1200px) {
+  body {
+    /* Adjust the styles for larger screens */
+    justify-content: flex-end;
+  }
+}
+
+
 .styles {
   width: 400px;
   height: 440px;
@@ -33,3 +60,23 @@
   object-fit: cover;
 }
 
+.footer-news{
+  display: inline-flex;
+  flex-direction: column;
+  flex: auto;
+  overflow-x: auto;
+  width: max-content;
+  margin: 50px;
+  padding: 50px;
+  }
+  
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+   
+    margin: 50px;
+}

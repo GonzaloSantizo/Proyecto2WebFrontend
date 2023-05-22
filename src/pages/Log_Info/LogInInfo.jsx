@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Newsletter from "../../components/Newsletter";
+import CardComponent from "../../components/Card";
 
 const BasicExample = () => {
   return (
@@ -55,6 +56,22 @@ export const LogIn_Info = () => {
         <h2>Asignación de medicamentos</h2>
       </div>
 
+      <div className="card-wrapper">
+        <Container fluid id="card-container">
+          <Row>
+            <Col>
+              <CardComponent></CardComponent>
+            </Col>
+            <Col>
+              <CardComponent></CardComponent>
+            </Col>
+            <Col>
+              <CardComponent></CardComponent>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
       <div>
         <h2>Asignación de Pacientes</h2>
         <div>
@@ -92,5 +109,7 @@ export const LogIn_Info = () => {
       </div>
       <BasicExample></BasicExample>
     </div>
+
+    
   );
 };

@@ -44,8 +44,12 @@ const Info_Hospitales = () => {
     <div className={styles}>
       <h4>
         {" "}
-        <a href="../"> Home</a>
+        <a href="../">
+          {" "}
+          <i class="material-icons">home</i>Home
+        </a>
       </h4>
+      <i src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1024px-Home-icon.svg.png"></i>
       <div className={info_section}>
         <h1>{hospital.nombre}</h1>
         <div className={informacion}>

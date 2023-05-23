@@ -80,3 +80,12 @@ body {
    
     margin: 50px;
 }
+
+.cards{
+  padding: 10px;
+  margin: 15px;
+}
+#card-wrapper{
+  padding: 10px;
+  margin: 15px;
+}

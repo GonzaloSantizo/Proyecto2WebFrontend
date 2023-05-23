@@ -21,40 +21,40 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.paho.org/sites/default/files/styles/max_1500x1500/public/2020-08/hospital-foto-minsa.jpg?itok=GtUn-uNj"
-          alt="First slide"
+          src="https://www.hospitaleslapaz.com/wp-content/uploads/2020/12/z14-1024x480-1.jpg"
+          alt="Hospital la Paz"
           onClick={() => handleClick()}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Hospital la paz</h3>
+          <p>Hospital privado en la ciudad de Guatemala.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://blogs.iadb.org/salud/wp-content/uploads/sites/15/2021/06/infraestructura-en-salud.jpg"
-          alt="Second slide"
+          src="https://cdn.elperiodico.com.gt/wp-content/uploads/2022/05/20202839/Fachada_Frontal-1024x555.jpg"
+          alt="Herrera"
           onClick={() => handleClick()}
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Hospital Herrera Llernadi</h3>
+          <p>Hospital Privado en la ciudad de Gutemala.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2020/05/1140-covid-19-hospital-esp.jpg"
-          alt="Third slide"
+          src="https://www.prensalibre.com/wp-content/uploads/2019/10/San-Juan-de-Dios.jpg?quality=52"
+          alt="San juan"
           onClick={() => handleClick()}
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Hospital San Juan de Dios</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Hospital Publico en la ciudad de Guatemala
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -62,15 +62,15 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://medlineplus.gov/images/HealthFacilities_share.jpg"
-          alt="Fourth Slide"
+          src="https://www.igssgt.org/wp-content/uploads/sites/5/2022/03/Hospital-General-de-Enfermedades-IGSS.jpg"
+          alt="Enfermedades"
           onClick={() => handleClick()}
         />
 
         <Carousel.Caption>
-          <h3>Fourth slide</h3>
+          <h3>Hospital General de enfermedades</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Hospital General de Enfermedades z9 Guatemala.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

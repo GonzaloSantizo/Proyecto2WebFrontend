@@ -54,13 +54,34 @@ const Home = () => {
         <Container fluid id="card-container">
           <Row>
             <Col>
-              <CardComponent></CardComponent>
+            <CardComponent
+              imageSrc="https://png.pngtree.com/background/20220726/original/pngtree-hospital-building-for-healthcare-cartoon-background-vector-illustration-with-picture-image_1806890.jpg"
+              
+            >
+              <h2>Hospital La Paz en carretera</h2>
+              <p>En el nuevo Centro Hospitalario La Paz Carretera a El Salvador le ofrecemos un servicio Hospitalario integral con las comodidades que toda familia requiere.</p>
+              {<Button variant="primary" href="https://www.hospitaleslapaz.com/grupo-hospitalario-la-paz/">Ver mas</Button>}
+            </CardComponent>
             </Col>
             <Col>
-              <CardComponent></CardComponent>
+            <CardComponent
+              imageSrc="https://www.guatemala.com/fotos/201806/Donar-sangre-885x500.jpg"
+              
+            >
+              <h2>Banco de Sangre</h2>
+              <p>Somos un banco de sangre privado que cuenta con todo el equipo necesario para la obtención, preparación y almacenamiento de componentes sanguíneos seguros.</p>
+              {<Button variant="primary" href="https://www.hospitaleslapaz.com/banco-de-sangre/">Ver mas</Button>}
+            </CardComponent>
             </Col>
             <Col>
-              <CardComponent></CardComponent>
+            <CardComponent
+              imageSrc="https://www.yunbitsoftware.com/blog/wp-content/uploads/2021/08/3745848-1200x800.jpg"
+              
+            >
+              <h2>Salud Siempre</h2>
+              <p>Es un seguro que presta servicios hospitalarios, consultas médicas y laboratorios a personas y empresas a través de servicios proveídos exclusivamente.</p>
+              {<Button variant="primary" href="https://www.saludsiempre.com.gt/">Ver mas</Button>}
+            </CardComponent>
             </Col>
           </Row>
         </Container>

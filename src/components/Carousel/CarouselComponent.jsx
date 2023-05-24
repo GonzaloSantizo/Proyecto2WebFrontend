@@ -33,7 +33,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://cdn.elperiodico.com.gt/wp-content/uploads/2022/05/20202839/Fachada_Frontal-1024x555.jpg"
+          src="https://www.soy502.com/sites/default/files/styles/full_node/public/2020/Ene/30/hospital_herrera_llerandi_ginecologia_medicina_interna_guatemala_soy502.jpg"
           alt="Herrera"
           onClick={() => handleClick()}
         />

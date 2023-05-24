@@ -9,7 +9,7 @@ import {
   lower_parts,
   reviews,
   servicios,
-} from "./Info_Hospitales.module.css";
+} from "./Info_Hospitales.module.scss";
 import { useApi } from "@hooks";
 
 import { Divider, Review, Servicio } from "@components";

@@ -1,7 +1,7 @@
 import React from "react";
 import { StoreContext } from "storeon/react";
 import store from "@store";
-import "./App.css";
+import "./App.scss";
 
 import Page from "@pages";
 

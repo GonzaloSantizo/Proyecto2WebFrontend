@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { useStoreon } from "storeon/react";
 import { navigate } from "@store";
-import "./Carousel.css";
+import "./Carousel.scss";
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -53,9 +53,7 @@ function ControlledCarousel() {
 
         <Carousel.Caption>
           <h3>Hospital San Juan de Dios</h3>
-          <p>
-            Hospital Publico en la ciudad de Guatemala
-          </p>
+          <p>Hospital Publico en la ciudad de Guatemala</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -69,9 +67,7 @@ function ControlledCarousel() {
 
         <Carousel.Caption>
           <h3>Hospital General de enfermedades</h3>
-          <p>
-            Hospital General de Enfermedades z9 Guatemala.
-          </p>
+          <p>Hospital General de Enfermedades z9 Guatemala.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

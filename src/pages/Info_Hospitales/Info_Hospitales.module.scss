@@ -118,3 +118,30 @@ body {
   display: flex;
   max-width: fit-content;
 }
+
+._styles_3roib_5 {
+  width: 400px;
+  height: 100%;
+  border: solid;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+._styles_nzfjj_1 {
+  width: 400px;
+  height: 100%;
+  border: solid;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
